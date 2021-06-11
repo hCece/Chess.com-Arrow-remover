@@ -1,0 +1,27 @@
+{
+    "name":"Chess.com - Arrow remover",
+    "version":"1.0",
+    "manifest_version":2,
+
+    "icons": 
+    {   
+        "16" : "pawn16.png",
+        "48" : "pawn48.png",
+        "128": "pawn128.png" 
+    },
+
+    "content_scripts":[
+        {
+            "matches":[
+                "https://www.chess.com/game/live/*", 
+                "https://www.chess.com/analysis/*",
+                "https://www.chess.com/puzzles/*",
+                "https://www.chess.com/daily-chess-puzzle/*"
+            ],
+            "js":[
+                "content.js"
+            ]
+
+        }
+    ]
+}
